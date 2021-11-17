@@ -1,0 +1,22 @@
+.Curriculum input{
+    width: 160px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 3px;
+    text-align: center;
+}
+
+.Curriculum button{
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.Curriculum button:hover{
+	background-color: gray;
+}
