@@ -1,17 +1,6 @@
 import axios from 'axios';
 import { setCurriculum } from '../reducers/subjectReducer';
 
-/*export function getSubjects(){
-    return async dispatch => {
-        try{
-            const response=await axios.get(`http://localhost:5000/api/auth/subjects`,{headers:{Authorization:`Bearer ${localStorage.getItem('token')}`}})
-            console.log(response.data)
-            dispatch(setSubjects(response.data));
-        }catch(e){
-            alert(e.response.data.message)
-        }
-    }
-}*/
 export const changeSubject=async (subject,semestr,formcontrol,credits)=>{
     try{
         const response = await axios.patch("http://localhost:5000/api/auth/changesubject",{

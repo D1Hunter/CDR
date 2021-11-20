@@ -1,4 +1,11 @@
 .subject{
     display: flex;
     justify-content: space-between;
+    height: auto;
+}
+
+.subject div{
+    border: black 1px solid;
+    width: 25%;
+    height: auto;
 }

@@ -1,8 +1,11 @@
 .subjectList{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
 }
 .subjectList_header{
     display: flex;
     justify-content: space-between;
+}
+.subjectList_header div{
+    width: 25%;
 }

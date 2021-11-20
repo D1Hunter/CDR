@@ -39,8 +39,13 @@ class curriculumService{
     }
     async getSubjects(req, res){
         try{
-            const Subjects=await AcademicSubjects.find();
-            res.json(Subjects);
+            const errors = validationResult(req)
+        if (!errors.isEmpty()) {
+            return res.status(400).json({message: "Ошибка при валидации", errors})
+        }   
+        const {subject}=req.body;
+            const Subject=await AcademicSubjects.findOne({subject});
+            res.json(Subject);
         }catch(e){
             console.log(e);
             req.send({message:"Server error"})
